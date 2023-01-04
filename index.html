@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="" href="">
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <header class="m-1">
+        <img class="logo" src="images/Logo.png" alt="Logo de Alura">
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-sm-1 col-7 m3">
+                <textarea class="text-area" name="textoEntrada" id="text" cols="30" rows="10" placeholder="Inserte el texto aquí" autofocus></textarea>
+                <p id="error" class="error m-1"><img src="images/Vector.png" alt="icono"> Solo letras minúsculas y sin acento.</p>
+                <div class="row m-1">
+                    <div class="col-5 col-sm-2 m-1">
+                        <button class="button button-encriptar" onclick="encriptar()">Encriptar</button>
+                    </div>
+                    <div class="col-5 col-sm-2 m-1">
+                        <button class="button button-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 col-4 m-1 card card2">
+                <img src="images/Muñeco2.png" class="image imagen" alt="Muñeco viendo diamante" id="imagen">
+                <section class="row left m-4" id="resultado">
+                    <h1 class="center">Ningún mensaje fue encontrado</h1>
+                    <p class="center">Ingrese el texto que desees encriptar o desencriptar</p>
+                </section>
+                <div class="col-12">
+                    <button class="copiar button-desencriptar" id="copiar" hidden>Copiar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <script src="javaScriptCode.js"></script>    
+</body>
+</html>
